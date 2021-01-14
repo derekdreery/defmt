@@ -20,6 +20,7 @@ test "assert-ne"
 test "unwrap"
 test "defmt-test"
 test "hints"
+test "hints_inner"
 if rustc -V | grep nightly; then
     test "alloc" "alloc"
 fi
