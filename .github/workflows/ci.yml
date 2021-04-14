@@ -3,6 +3,7 @@ name: CI
 on:
   push:
     branches: [main, staging, trying]
+    # don't run CI when changing md-files, except they are part of the book
     paths-ignore:
       - "*.md"
       - "!book/src/**"
