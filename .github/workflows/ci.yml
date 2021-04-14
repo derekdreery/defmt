@@ -3,8 +3,14 @@ name: CI
 on:
   push:
     branches: [main, staging, trying]
+    paths-ignore:
+      - "*.md"
+      - "!book/src/**"
   pull_request:
     branches: [ main ]
+    paths-ignore:
+      - "*.md"
+      - "!book/src/**"
   schedule:
     # runs 1 min after 2 or 1 AM (summer/winter) berlin time
     - cron: '1 0 * * *'
